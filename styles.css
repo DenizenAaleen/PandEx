@@ -1,0 +1,142 @@
+ul {
+  list-style-type:none;
+  padding-left: 1em;
+}
+ul ul{
+  padding-left: 0em;
+}
+#sidenav {
+  position: fixed !important;
+  height:100% !important;
+  width:15% !important;
+  z-index: 1 !important;
+  top:0 !important;
+  left:0 !important;
+  background:orange !important;
+  background:linear-gradient(to right,#ff7f00,#ffffff) !important;
+}
+#main{
+  padding:20px !important;
+  margin-left:15% !important;
+}
+section {
+  background:red;
+  background:linear-gradient(#ffffff,#ff0000,#ffffff);
+}
+header {
+  text-align:center;
+  background:red;
+  background:linear-gradient(#ff0000,#ffffff);
+}
+footer {
+  text-align:center;
+  background:red;
+  background:linear-gradient(#ffffff,#ff0000);
+}
+#copyright{
+  text-align:center;
+  font-style:italic;
+}
+.horizfill {
+  background-image: url('LineBreak.jpg');
+  width: 100%;
+  height: 25px;
+}
+table{
+  width:450px;
+  border-spacing:3px;
+  background-color:#000000;
+}
+th, td{
+  text-align:center;
+}
+th{
+  background-color:#ffffff;
+}
+td{
+  background-color:#ffffff;
+  min-width:100px;
+}
+.point{
+  text-align:center;
+  min-width:35px;
+  width:35px;
+}
+.empty{
+  background-color:#ffffff;
+  background-color:rgba(0,0,0,0);
+}
+.empty-point{
+  text-align:center;
+  min-width:35px;
+  width:35px;
+  background-color:#ffffff;
+  background-color:rgba(0,0,0,0);
+}
+.prereq1{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  text-shadow: 2px 2px #000000;
+  text-indent: 75px;
+}
+*[class="prereq1"]{
+	cursor: wait;
+}
+h2+p{
+	font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 75%;
+}
+.prereq1>p{
+  text-shadow: -2px -2px #ffffff;
+}
+h2.prereq1{
+  font-size: 50px;
+  line-height: 1%;
+}
+a:link{
+  color:#0000ff;
+}
+a:visited{
+  color:#6600cc;
+}
+a:active{
+  color:#ff0000;
+}
+.toggle-box{
+  display:none;
+}
+.toggle-box+label{
+  cursor: pointer;
+  display:block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+.toggle-box+label+div{
+  display: none;
+  margin-bottom: 10px;
+}
+.toggle-box:checked+label+div{
+  display:block;
+}
+.toggle-box+label:before{
+  background-color: Black;
+  border-radius: 10px;
+  color: Red;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+.toggle-box:checked+label:before{
+  content:"\2212";
+  background-color: Black;
+  color:White;
+}
