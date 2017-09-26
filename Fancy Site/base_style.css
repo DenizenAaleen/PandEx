@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Sinkin";
+  src: url("Sinkin.ttf");
+}
+
+body {
+  background-color: #7c7e73;
+}
+
+h1 {
+  font-family: Sinkin;
+  color: #474747;
+}
+
+h3 {
+  font-family: Sinkin;
+  color: #474747;
+}
+
+p {
+  font-family: Sinkin;
+  color: #474747;
+}
+
+.container_main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px auto 300px;
+    grid-template-rows: 50px 300px auto auto;
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar content content"
+        "sidebar content content"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: sidebar;
+}
+
+nav iframe {
+    margin-left: -20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}

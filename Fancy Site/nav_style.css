@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Sinkin";
+  src: url("Sinkin.ttf");
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background: #3e3436;
+    width: 100%;
+    margin: 0px auto;
+}
+
+ul {
+    padding: 25px 0px 10px 0px;
+}
+
+nav li {
+    margin: 0px;
+    list-style: none;
+    font-family: Sinkin;
+}
+ 
+nav a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+nav li:hover > a {
+    color: #93ae6d;
+}
+
+a {
+    width: 100%;
+}
+
+li a {
+    transition: all linear .25s;
+    color: #919191;
+}
+
+nav > ul > li > a {
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+nav > ul > li:hover > a {
+    background: #2e2728;
+}
+
+
+
+
+
+
+
