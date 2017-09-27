@@ -31,7 +31,7 @@ p {
         "sidebar header header"
         "sidebar content content"
         "sidebar content content"
-        "footer footer footer";
+        "sidebar footer footer";
 }
 
 header {
@@ -56,3 +56,82 @@ section {
 footer {
     grid-area: footer;
 }
+
+
+/* Terry's Chart Css shit start */
+
+table{
+  width:450px;
+  border-spacing:3px;
+  background-color:#000000;
+}
+th, td{
+  text-align:center;
+}
+th{
+  background-color:#ffffff;
+}
+td{
+  background-color:#ffffff;
+  min-width:100px;
+}
+.point{
+  text-align:center;
+  min-width:35px;
+  width:35px;
+}
+.empty{
+  background-color:#ffffff;
+  background-color:rgba(0,0,0,0);
+}
+.empty-point{
+  text-align:center;
+  min-width:35px;
+  width:35px;
+  background-color:#ffffff;
+  background-color:rgba(0,0,0,0);
+}
+
+/* Terry's Chart Css shit end */
+/* Terry's Collapse Css shit end */
+
+.toggle-box{
+  display:none;
+}
+.toggle-box+label{
+  cursor: pointer;
+  display:block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+.toggle-box+label+div{
+  display: none;
+  margin-bottom: 10px;
+}
+.toggle-box:checked+label+div{
+  display:block;
+}
+.toggle-box+label:before{
+  background-color: Black;
+  border-radius: 10px;
+  color: Red;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+.toggle-box:checked+label:before{
+  content:"\2212";
+  background-color: Black;
+  color:White;
+}
+
+/* Terry's Collapse Css shit end */
+
+
